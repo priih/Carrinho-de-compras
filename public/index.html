@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--Cabecalho-->
+        <header class="cabecalho">
+            <h1 class="titulo">Carrinho de compras</h1>
+        </header>
+
+        <form class="formulario">
+            <input class="campos" data-id="quantidade" type="number" placeholder="Quantidade">
+            <input class="campos" data-id="valor-unitario" type="text" placeholder="Valor Unitario">
+            <input class="campos" data-id="data" type="date" placeholder="Data">
+            <input class="campos" data-0id="descricao" type="text" placeholder="Descrição">
+            <!--Placeholder coloca o texto descrição dentro do formulário-->
+
+            <button class="comprar" type="submit">Comprar</button>
+        </form>
+
+        <section class="relatorio">
+            <div class="cabecalho-nf">
+                <p>Descrição</p>
+                <p>Quantidade</p>
+                <p>Valor Unitário</p>
+                <p>Valor Total</p>
+            </div>
+
+            <div class="card-item-nf">
+                <p>Bicicleta cargueira</p>
+                <p>1</p>
+                <p>R$ 600,00</p>
+                <p>R$999,99</p>
+            </div>
+        </section>
+        <footer class="total">
+            <p>Total: R$</p>
+            <p>1000,00</p>
+        </footer>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script src="...src/domain/Negociacao.js"></script>
+    <script src="...src/domain/NegociacaoControler.js"></script>
+    <script src="...src/domain/app.js"></script>
+</body>
+
+</html>
